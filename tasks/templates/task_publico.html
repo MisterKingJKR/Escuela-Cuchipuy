@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-5">
+            <h1 class="text-center fw-bold">Cursos Disponibles</h1>
+
+            <ul class="list-group">
+                {% for task in tasks %}
+            
+                <li class="list-group-item mt-5">
+                    <a>
+                        <h1 class="fw-bold"><strong>{{task.title}}</strong></h1>
+                        <p>{{task.description}}
+                        <a href="/orientadores/" class="list-group-item mt-5">{{task.user.username}}</a></p>
+                    </a>
+                </li>
+            
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+    
+
+{% endblock %}
