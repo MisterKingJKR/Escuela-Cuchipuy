@@ -30,6 +30,9 @@
                 <li class="nav-item">
                     <a href="/orientadores" class="nav-link">Grupo Orientadores</a>
                 </li>
+                <li class="nav-item">
+                    <a href="/signup" class="nav-link">Registrar Usuario</a>
+                </li>
                 
                 {% if user.is_authenticated %}
                 <li class="nav-item">
@@ -41,9 +44,7 @@
                 <li class="nav-item">
                     <a href="/logout" class="nav-link">Cerrar Sesión</a>
                 </li>
-                <li class="nav-item">
-                    <a href="/signup" class="nav-link">Registrar Usuario</a>
-                </li>
+                
                 {% else %}
                 <li class="nav-item">
                     <a href="/signin" class="nav-link">Iniciar Sesión</a>
